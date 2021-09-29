@@ -63,7 +63,7 @@ a:visited, a:hover{
 	align-items: center; /*флекс-элементы размещаются по центру по высоте.*/
 }
 .logo{
-	background: url(/assets/svg/logo-icon.svg) 0% 43% no-repeat;
+	background: url(assets/svg/logo-icon.svg) 0% 43% no-repeat;
 }
 .louvre-title{
 	padding-left: 70px;
@@ -93,7 +93,7 @@ a:visited, a:hover{
 }
 
 .welcome{
-	background-image: url(/assets/img/background.jpg);
+	background-image: url(assets/img/background.jpg);
 	background-repeat: no-repeat;
 	/* TODO: fix horizontal left side of bg-pic*/
 	background-position-x: right;
