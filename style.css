@@ -1,0 +1,195 @@
+html {
+  scroll-behavior: smooth; 
+}
+
+:root {
+  --bg-dark: #030303;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font1: 80px;
+  --font2: 32px;
+  --font3: 28px;
+  --font4: 22px;
+  --font5: 18px;
+}
+
+.beauty-font{
+	font-family: Forum, cursive;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
+.section-title{
+	font-size: var(--font1);
+	line-height: 90px;
+	margin: 0;
+}
+
+.section-title-gold{
+	color: var(--font-gold);
+}
+
+
+body{
+	margin: 0px 0px;
+	font: 200 var(--font4)/50px 'Roboto',sans-serif;
+	letter-spacing: 2px;
+}
+
+
+.dark-section{
+	background-color: var(--bg-dark);
+	color: white;
+	
+}
+
+.dark-section a {
+	color: white;
+	text-decoration: none;
+} 
+a:visited, a:hover{
+	color: var(--font-gold);
+}
+.section{
+	padding: 75px 0;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 1440px;
+}
+.header-container{
+	display: flex;
+	justify-content: space-between; /*элементы равномерно распределяются по всей строке, первый и последний прижимаются к краям контейнера.*/
+	align-items: center; /*флекс-элементы размещаются по центру по высоте.*/
+}
+.logo{
+	background: url(/assets/svg/logo-icon.svg) 0% 43% no-repeat;
+}
+.louvre-title{
+	padding-left: 70px;
+	padding-right: 20px;
+	font-size: var(--font3);
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.nav{
+	flex-basis: 720px;
+}
+.nav-ul{
+	display: flex;
+  	justify-content: space-between;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.nav-li{
+	padding: 0 10px;
+}
+.header-container a {
+	display: block;
+	line-height: 200px;
+	transition: 0.3s;
+}
+
+.welcome{
+	background-image: url(/assets/img/background.jpg);
+	background-repeat: no-repeat;
+	/* TODO: fix horizontal left side of bg-pic*/
+	background-position-x: right;
+	padding-top: 115px;
+	padding-bottom: 246px;
+
+}
+.welcome p{
+	line-height: 33px;
+	margin: 25px 0 75px;
+	font-weight: 300;
+	font-size: var(--font3);
+}
+.welcome a{
+	display: block;
+	line-height: 75px;
+	width: 360px;
+	background-color: var(--dark-red);
+	border-radius: 10px;
+	text-align: center;
+	transition: 0.3s;
+}
+.welcome a:visited{
+	color: white;
+}
+.welcome a:hover{
+	background-color: var(--font-gold);
+	
+}
+
+.underline-title {
+  position: relative;
+}
+.underline-title::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark-red);
+}
+
+
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 78px 60px;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 100px;
+	
+}
+.card{
+	color: black;
+	text-decoration: none;
+	transition: 0.7s;
+}
+.card-pic{
+	width: 440px;
+	height: 285px;
+	margin: 0%;
+	display: block;
+}
+.card-text-big{
+	font-size: var(--font2);
+	margin:  25px 0 0;
+	line-height: 35px;
+}
+.cards > .underline-title::after {
+  content: "";
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+  width: 70%;
+  height: 2px;
+  background-color: var(--dark-red);
+  transition: 0.7s;
+}
+.cards > .underline-title:hover::after {
+  width: 100%;
+  
+}
+
+.card-text{
+	margin:  21px 0 10px;
+	line-height: 26px;
+	letter-spacing: initial;
+}
+.card-text-smol{
+	margin: 0%;
+	font-size: var(--font5);
+	line-height: 21px;
+	letter-spacing: initial;
+}
+
+
+
+
